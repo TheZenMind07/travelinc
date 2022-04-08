@@ -47,4 +47,36 @@ As a part of exercise from head first object design analysis
 9. The system creates a new connection between the two
 stations, going in both directions, on the current line.
 10. The system repeats steps 7-9 until the line is complete.
+11. Repeat steps 6-10 for all the lines.
+
+### Classes for Subway 
+
+|Subway Loader|
+|-------|
+|`private subway`|
+|`loadFromFile : Subway`|
+
+|Subway|
+|-------|
+|`private List stations`|
+|`private List connections`|
+|`addStation(Station st) : void`|
+|`validateStation(Station st) : boolean`|
+|`addConnection(Station st1, Station st2, String Line): void`|
+
+|Station|
+|-------|
+|`private Station station`|
+|`addStation(Station st) : void`|
+|`validateStation(Station st) : boolean`|
+|`addConnection(Station st1, Station st2, String Line): void`|
+
+
+|Connection|
+|-------|
+|`private Station st1`|
+|`private Station st2`|
+|`getStationOne : Station`|
+|`getStationTwo : Station`|
+|`getLineName : String`|
 
