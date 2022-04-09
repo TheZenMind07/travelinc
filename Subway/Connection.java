@@ -22,5 +22,10 @@ public class Connection {
         return lineName;
     }
 
+    public boolean equals(Connection conn){
+        if(this.stationOne.equals(conn.getStationOne()) && this.stationTwo.equals(conn.getStationTwo()) && this.getLineName().equalsIgnoreCase(conn.getLineName()))
+            return true;
+        return false;
+    }
 
 }
