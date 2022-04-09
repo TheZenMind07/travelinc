@@ -82,3 +82,4 @@ stations, going in both directions, on the current line.
 |`getStationTwo : Station`|
 |`getLineName : String`|
 
+## PathFinder Module
