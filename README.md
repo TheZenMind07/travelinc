@@ -55,21 +55,23 @@ stations, going in both directions, on the current line.
 |-------|
 |`private subway`|
 |`loadFromFile : Subway`|
+|`loadStations `|
+|`loadLines`|
 
 |Subway|
 |-------|
 |`private List stations`|
 |`private List connections`|
 |`addStation(Station st) : void`|
-|`validateStation(Station st) : boolean`|
+|`hasStation(Station st) : boolean`|
 |`addConnection(Station st1, Station st2, String Line): void`|
 
 |Station|
 |-------|
 |`private Station station`|
 |`addStation(Station st) : void`|
-|`validateStation(Station st) : boolean`|
-|`addConnection(Station st1, Station st2, String Line): void`|
+|`equals(Station st) : boolean`|
+|`hashCode() : int `|
 
 
 |Connection|
